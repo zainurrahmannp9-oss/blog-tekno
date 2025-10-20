@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nzy Zack</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Nzee Project</div>
+    <ul class="nav-links">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#profile">Profil</a></li>
+      <li><a href="https://ubpkarawang.ac.id/" target="_blank">ubpkarawang</a></li>
+      <li><a href="https://www.instagram.com/zck.prstya/" target="_blank">Instagram</a></li>
+      <li><button id="toggleMode">🌙 / ☀️</button></li>
+    </ul>
+  </nav>
+
+  <section id="profile" class="profile-card">
+    <img id="profilePic" src="/img/profile.jpg" alt="Avatar">
+    <h2 id="profileName">Nama: Zainurrahman Nanda Prasetyanta</h2>
+    <p id="profileClass">Kelas: IF24B</p>
+    <p id="profileProdi">Prodi: Teknik Informatika</p>
+    <p id="profileNIM">NIM: 24416255201040</p>
+    <p id="profileEmail">email: if24.zainurrahmanprasetyanta@mhs.ac.id</p>
+    <button id="editProfileBtn">Edit Profil</button>
+  </section>
+
+  <section id="editProfile" class="edit-form hidden">
+    <h3>Edit Profil</h3>
+    <input type="text" id="inputName" placeholder="Nama">
+    <input type="text" id="inputClass" placeholder="Kelas">
+    <input type="text" id="inputProdi" placeholder="Prodi">
+    <input type="text" id="inputNIM" placeholder="NIM">
+    <input type="email" id="inputEmail" placeholder="Email">
+    <input type="file" id="inputPic" accept="image/*">
+    <button id="saveProfileBtn">Simpan</button>
+  </section>
+
+  <section id="addPost" class="add-post">
+    <h3>Tambah Postingan Baru</h3>
+    <input type="text" id="postTitle" placeholder="Judul Postingan">
+    <input type="file" id="postImage" accept="image/*">
+    <textarea id="postContent" placeholder="Isi postingan..."></textarea>
+    <button id="addPostBtn">Tambah</button>
+  </section>
+
+  <section id="home" class="post-list"></section>
+
+  <div id="postDetail" class="post-detail hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
